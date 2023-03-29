@@ -33,8 +33,7 @@ jobs:
         run: python manage.py test
 
   build-demo:
-    name: GitHub Actions Demo
-    run-name: 
+    name: GitHub Actions Demo 
     on: [push]
     runs-on: ubuntu-latest
     steps:
