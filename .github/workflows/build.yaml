@@ -35,6 +35,7 @@ jobs:
   build-demo:
     name: GitHub Actions Demo 
     runs-on: ubuntu-latest
+    needs: [build]
     steps:
         - run: echo "${{ github.actor }} is testing out GitHub Actions 🚀"
         - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
